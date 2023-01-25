@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/encript_test"
+        android:textSize="@dimen/size_24"
+        app:layout_constraintBottom_toTopOf="@+id/editEncryptValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editEncryptValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/encript_data"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textErrorMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <TextView
+        android:id="@+id/textErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/encript_test_buttom"
+        app:layout_constraintEnd_toEndOf="@+id/editEncryptValue"
+        app:layout_constraintStart_toStartOf="@+id/editEncryptValue"
+        app:layout_constraintTop_toBottomOf="@+id/editEncryptValue" />
+
+    <Button
+        android:id="@+id/encript_test_buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/encript_test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editEncryptValue"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/editEncryptValue"
+        app:layout_constraintTop_toBottomOf="@+id/textErrorMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
