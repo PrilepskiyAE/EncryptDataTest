@@ -13,3 +13,4 @@
 ## 3) Asynchrony
 ###    3.1) Coroutines;
 ###    3.2) StateFlow;
+![Image alt](https://github.com/PrilepskiyAE/EncryptDataTest/blob/master/screen2.jpg)
